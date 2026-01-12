@@ -1,12 +1,12 @@
-# 🔐 Task 01 – Caesar Cipher (Python)
+#  Task 01 – Caesar Cipher (Python)
 
-## 📌 Internship Task Description
+##  Internship Task Description
 
 This project is **Task 01** of my **Cyber Security Internship**.
 The goal of this task is to implement the **Caesar Cipher encryption technique** using Python and enhance it with security-oriented features such as brute-force decryption and input validation.
 
 
-## 🧠 About Caesar Cipher
+##  About Caesar Cipher
 
 Caesar Cipher is one of the oldest encryption techniques.
 Each character in the plaintext is shifted by a fixed number of positions in the alphabet.
@@ -21,25 +21,25 @@ Cipher Text: KHOOR
 
 ---
 
-## ✨ Features Implemented
+##  Features Implemented
 
-* ✅ Text **encryption** using a user-defined shift
-* ✅ Text **decryption** using the same shift
-* ✅ **Brute-force decryption** (tries all possible shifts from 1–25)
-* ✅ Input validation for shift values
-* ✅ Maintains uppercase and lowercase letters
-* ✅ Non-alphabet characters remain unchanged
+*  Text **encryption** using a user-defined shift
+*  Text **decryption** using the same shift
+*  **Brute-force decryption** (tries all possible shifts from 1–25)
+*  Input validation for shift values
+*  Maintains uppercase and lowercase letters
+*  Non-alphabet characters remain unchanged
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * **Programming Language:** Python 3
 * **Concepts:** Cryptography basics, loops, conditionals, input validation
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 Task-01-Caesar-Cipher/
@@ -50,7 +50,7 @@ Task-01-Caesar-Cipher/
 
 ---
 
-## ▶️ How to Run the Program
+##  How to Run the Program
 
 1. Clone the repository:
 
@@ -72,7 +72,7 @@ Task-01-Caesar-Cipher/
 
 ---
 
-## 🧪 Available Program Modes
+##  Available Program Modes
 
 * **E** → Encrypt a message
 * **D** → Decrypt a message
@@ -80,7 +80,7 @@ Task-01-Caesar-Cipher/
 
 ---
 
-## 🎯 Learning Outcomes
+##  Learning Outcomes
 
 * Understanding classical encryption techniques
 * Implementing brute-force attack simulation
