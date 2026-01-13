@@ -1,83 +1,104 @@
-🔐 Task-02: Pixel Manipulation for Image Encryption
+Task-02: Pixel Manipulation for Image Encryption
 I Project Overview
 
-This project is developed as part of the Prodigy InfoTech Cyber Security Internship (Task-02).
-The main goal of this task is to understand how images can be encrypted using pixel manipulation techniques and how the same image can be restored using the correct key.
+This project demonstrates a simple image encryption and decryption technique using pixel manipulation in Python. The main objective of the project is to understand how image data can be protected using basic cryptographic and steganography concepts.
 
-In addition to basic image encryption, this project also demonstrates:
-1.Password-based encryption
-2.Hiding a secret message inside an image
-3.Secure decryption using the same password
+The program hides a secret text message inside an image by modifying the least significant bits of pixel values. During decryption, the program validates the password and message length before revealing the hidden message.
 
-The implementation is kept simple and beginner-friendly while still reflecting a real-world security concept.
+II Technologies Used:
 
-II How the Project Works
+1.Python
+2.Pillow (PIL) library
+3.Basic Cryptography Concepts
+4.Image Processing
 
-An image is made up of thousands of pixels, and each pixel contains RGB (Red, Green, Blue) values.
-In this project:
-1.The user provides a password, which is converted into a numeric key.
-2.A secret message is hidden inside the image by modifying pixel values.
-3.The image is encrypted by:
-  3.1 Swapping RGB values
-  3.2 Applying a mathematical operation using the generated key
-4.During decryption, the process is reversed using the same password, and:
-  4.1 The original image is restored
-  4.2 The hidden message is extracted successfully
+III Project Features:
 
-This ensures that without the correct password, the image remains unreadable.
+1.Encrypts an image by hiding a secret message inside pixel data
+2.Uses a password for authentication
+3.Stores and validates message length during decryption
+4.Displays clear error messages for:
+   4.1 Wrong password
+   4.2 Wrong message length
+5.Prevents message extraction if authentication fails
 
-III Technologies Used
+IV How the Project Works:
+  IV.1 Encryption Process:
+1.The user selects encryption mode.
+2.The user provides:
+  2.1 A password
+  2.2 A secret message
+3.The program:
+  3.1 Generates a secure hash of the password
+  3.2 Calculates the message length
+  3.3 Combines password hash, message length, and message
+  3.4 Converts the data into binary
+  3.5 Embeds the binary data into image pixels using least significant bit manipulation
+4.The encrypted image is saved as encrypted.png.
 
-1.Python 3
-2.Pillow (PIL) library for image processing
-3.VS Code for development
+   IV.2 Decryption Process
 
-IV How to Run the Project
+1.The user selects decryption mode.
+2.The program extracts hidden binary data from the image.
+3.The user is asked to enter the password:
+  3.1 If the password is incorrect, decryption stops.
+4.If the password is correct, the user is asked to enter the message length:
+  4.1 If the length is incorrect, the message is not revealed.
+5.If both password and message length are correct, the secret message is displayed.
 
-1.Make sure Python is installed on your system.
-2.Install the required library:
+V Folder Structure
+Task-02-Pixel-Encryption/
+│
+├── README.md
+├── pixel.py
+├── nature.png
+├── encrypted.png
+
+VI How to Run the Project
+Step 1: Install Required Package
 pip install pillow
-3.Place an input image (e.g., nature.png) inside the project folder.
-4.Run the program:
+
+Step 2: Run the Program
 python pixel.py
-5.Choose:
-  5.1 E to encrypt the image
-  5.2 D to decrypt the image
 
-Enter the password and other required inputs when prompted.
+Step 3: Follow On-Screen Instructions
 
-V Output Files
+Choose Encrypt (E) or Decrypt (D)
 
-After successful execution, the following files are generated:
+Enter password and message when prompted
 
-1. encrypted_image.png → The encrypted version of the original image (appears distorted)
-2. decrypted_image.png → The original image restored after decryption
+VII Sample Output:
+1. Encryption
+Enter E to Encrypt or D to Decrypt: E
+Create password: hema123
+Enter secret message: hai
+Image encrypted successfully
 
-The secret message entered during encryption is also displayed during the decryption process.
+ Decryption (Wrong Password)
+Wrong password
 
-VI Security Concepts Demonstrated
+Decryption (Wrong Message Length)
+Password correct
+Wrong message length
 
-1.Image encryption using pixel manipulation
-2.Password-based key generation
-3.Data confidentiality
-4.Basic steganography (hidden message inside image)
-5.Reversible encryption and decryption
+Decryption (Successful)
+Password correct
+Secret Message: hai
 
-VII Sample Use Case
+VIII Learning Outcome:
 
-1.This type of technique can be applied in:
-2.Secure image sharing
-3.Digital watermarking
-4.Privacy protection
-5.Educational demonstrations of cryptography concepts
+Through this project, I gained practical experience in:
 
-VIII Internship Task Details
+1.Image processing using Python
+2.Pixel-level data manipulation
+3.Basic steganography techniques
+4.Password validation using hashing
+5.Error handling and input validation
 
-1.Internship: Prodigy InfoTech – Cyber Security
-2.Task Number: Task-02
-3.Task Name: Pixel Manipulation for Image Encryption
+This task helped me understand how cryptography concepts can be applied to protect multimedia data.
 
-IX Conclusion
+Author
 
-This project successfully demonstrates how image encryption can be implemented using simple pixel operations and password-based security.
-It provides a practical understanding of how visual data can be protected from unauthorized access using basic cryptographic principles.
+Hema Harini
+Cyber Security Intern
+Prodigy InfoTech
