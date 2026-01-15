@@ -1,0 +1,17 @@
+123456
+12345678
+password
+password123
+admin
+admin123
+qwerty
+qwerty123
+welcome
+welcome123
+letmein
+iloveyou
+abc123
+user
+root
+test
+india
