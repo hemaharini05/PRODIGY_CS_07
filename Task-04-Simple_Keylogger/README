@@ -1,0 +1,89 @@
+Simple Keylogger – Educational Python Project (Task-04)
+I. Project Overview
+
+This project is a simple keylogger application developed using Python as part of an internship task.
+The purpose of this project is strictly educational. It is designed to understand how keyboard input events are handled in software and to learn the importance of ethical responsibility in cybersecurity-related tools.
+
+The program records keystrokes only after explicit user consent and stores them locally in a text file. It does not run in the background, does not hide itself, and does not transmit data over the network.
+
+II. Objective of the Project
+
+1.The objectives of this project are:
+2.To understand how keyboard events are captured in Python
+3.To learn file handling and logging mechanisms
+4.To study keylogging in a controlled and ethical manner
+5.To understand why misuse of such tools can be harmful
+
+III. Technologies Used
+
+1.Programming Language: Python 3
+2.External Library: pynput
+3.Development Environment: Visual Studio Code
+
+IV. System Requirements
+
+1.Python version 3.8 or above
+2.pip package manager
+3.Windows or Linux operating system
+
+V. Installation and Setup
+
+Step 1: Install Python
+Check whether Python is installed using: python --version
+
+Step 2: Install Required Library
+pip install pynput
+
+If pip does not work:
+
+python -m pip install pynput
+
+Step 3: Run the Program
+python keylogger.py
+
+VI. How the Program Works
+
+1.The program starts by displaying an ethical warning and explaining its purpose
+2.The user is asked for explicit permission to start keystroke logging
+3.If permission is granted, the program begins recording key presses
+4.Alphanumeric keys are logged normally
+5.The Space key is handled to maintain proper spacing between words
+6.The Enter key is handled to move logs to a new line
+7.Keystrokes are saved locally in a file named keystrokes_log.txt
+8.Logging stops safely when the user presses the ESC key
+9.Session start and end timestamps are recorded
+
+VII. Output
+
+The program generates a text file named keystrokes_log.txt.
+
+The file contains:
+1.Session start date and time
+2.Logged keystrokes with spaces and new lines preserved
+3.Session end confirmation
+
+VIII. Ethical Disclaimer
+
+This project is developed strictly for educational purposes.
+It is intended to be used only on the developer’s own system with full knowledge and consent of the user.
+
+This program does NOT include:
+
+1.Hidden execution
+2.Background monitoring
+3.Remote data transmission
+4.Automatic startup behavior
+
+Any unethical or illegal use of this project is strongly discouraged.
+
+IX. Learning Outcomes
+
+Through this project, I gained practical experience in:
+1.Keyboard event handling using Python
+2.Handling special keys such as Space and Enter
+3.File handling and structured logging
+4.Understanding ethical considerations in cybersecurity tools
+
+X. Conclusion
+
+This project provided hands-on experience with keyboard input monitoring while emphasizing ethical responsibility and transparency. It demonstrates how sensitive concepts like keylogging can be implemented safely for educational learning purposes.
