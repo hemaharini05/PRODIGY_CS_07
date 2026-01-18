@@ -1,0 +1,107 @@
+Network Packet Analyzer
+I. Project Overview
+
+The Network Packet Analyzer is a Python-based cybersecurity tool developed to capture and analyze live network packets.
+It extracts essential packet information such as source and destination IP addresses, protocol type, port numbers, payload size, and timestamps.
+
+This project is developed strictly for educational and ethical purposes as part of an internship task.
+
+II. Objectives
+
+1.To understand how data is transmitted over a network in the form of packets
+2.To analyze packet headers and protocol information
+3.To implement a basic packet sniffing mechanism using Python
+4.To practice ethical network monitoring techniques
+
+III. Features Implemented
+1.Live network packet capture
+2.Network interface detection
+3.Source and destination IP address identification
+4.Protocol identification (TCP, UDP, ICMP)
+5.Protocol-based packet filtering
+6.Source and destination port number display
+7.ICMP packet (Ping) detection
+8.Payload size calculation
+9.Suspicious packet size alert mechanism
+10.Packet logging to a text file
+11.Timestamp logging for each packet
+12.Packet count tracking
+
+IV. Technologies Used
+
+1.Programming Language: Python 3
+2.Packet Analysis Library: Scapy
+3.Operating System: Windows
+4.Packet Capture Driver: Npcap
+
+V. Prerequisites
+
+Before running the project, ensure the following are installed:
+1.Python 3.8 or higher
+2.Scapy library
+3.Npcap (installed in WinPcap-compatible mode)
+4.Administrator privileges
+
+Install Scapy:
+pip install scapy
+
+VI. How to Run the Project
+
+1.Clone or download the repository
+2.Open VS Code or Command Prompt as Administrator
+3.Navigate to the project directory
+4.Run the program using the command:
+
+python packet.py
+
+5.Generate network traffic by:
+  5.1 Opening a web browser
+  5.2 Visiting any website
+  5.3 Running ping -4 google.com
+
+VII. Sample Output
+Packet #5
+Time: 2026-01-18 15:05:30
+Source IP: 10.60.172.210
+Destination IP: 10.60.172.87
+Protocol: UDP
+Source Port: 56842
+Destination Port: 53
+Payload Size: 52 bytes
+-------------------------------------------------------
+
+VIII. Ethical Considerations
+
+This tool is developed only for educational purposes.
+The user must have proper authorization before monitoring any network.
+
+The program:
+
+1.Avoids capturing sensitive payload data
+2.Limits packet capture count
+3.Displays ethical usage warnings
+
+Unauthorized use of packet sniffing tools is strictly discouraged.
+
+IX. Limitations
+
+1.The current implementation focuses on IPv4 packets
+2.IPv6 (ICMPv6) packets are not captured
+3.Payload content is not displayed to maintain privacy
+
+X. Future Enhancements
+
+1.IPv6 packet and ICMPv6 support
+2.GUI-based packet analyzer
+3.CSV-based logging
+4.Advanced intrusion detection alerts
+
+XI. Author
+
+Hema Harini
+Cybersecurity Intern
+
+XII. Disclaimer
+
+This project is intended only for academic and ethical learning purposes.
+The author is not responsible for any misuse of this tool.
