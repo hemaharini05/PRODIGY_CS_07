@@ -1,0 +1,91 @@
+
+Packet #3
+Time: 2026-01-18 15:05:30
+Source IP: 10.60.172.210
+Destination IP: 10.60.172.87
+Protocol: UDP
+Source Port: 56842
+Destination Port: 53
+Payload Size: 52 bytes
+
+-------------------------------------------------------
+Packet #4
+Time: 2026-01-18 15:05:30
+Source IP: 10.60.172.210
+Destination IP: 10.60.172.87
+Protocol: UDP
+Source Port: 54382
+Destination Port: 53
+Payload Size: 52 bytes
+
+-------------------------------------------------------
+Packet #5
+Time: 2026-01-18 15:05:30
+Source IP: 10.60.172.87
+Destination IP: 10.60.172.210
+Protocol: UDP
+Source Port: 53
+Destination Port: 56842
+Payload Size: 107 bytes
+
+-------------------------------------------------------
+Packet #6
+Time: 2026-01-18 15:05:30
+Source IP: 10.60.172.87
+Destination IP: 10.60.172.210
+Protocol: UDP
+Source Port: 53
+Destination Port: 54382
+Payload Size: 107 bytes
+
+-------------------------------------------------------
+Packet #8
+Time: 2026-01-18 15:05:32
+Source IP: 10.60.172.210
+Destination IP: 10.60.172.87
+Protocol: UDP
+Source Port: 56842
+Destination Port: 53
+Payload Size: 58 bytes
+
+-------------------------------------------------------
+Packet #9
+Time: 2026-01-18 15:05:32
+Source IP: 10.60.172.210
+Destination IP: 10.60.172.87
+Protocol: UDP
+Source Port: 49713
+Destination Port: 53
+Payload Size: 58 bytes
+
+-------------------------------------------------------
+Packet #12
+Time: 2026-01-18 15:05:32
+Source IP: 10.60.172.87
+Destination IP: 10.60.172.210
+Protocol: UDP
+Source Port: 53
+Destination Port: 56842
+Payload Size: 178 bytes
+
+-------------------------------------------------------
+Packet #15
+Time: 2026-01-18 15:05:32
+Source IP: 10.60.172.210
+Destination IP: 20.42.72.131
+Protocol: TCP
+Source Port: 62246
+Destination Port: 443
+Payload Size: 32 bytes
+
+-------------------------------------------------------
+Packet #16
+Time: 2026-01-18 15:05:32
+Source IP: 10.60.172.87
+Destination IP: 10.60.172.210
+Protocol: UDP
+Source Port: 53
+Destination Port: 49713
+Payload Size: 190 bytes
+
+-------------------------------------------------------
